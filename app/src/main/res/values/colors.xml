@@ -11,4 +11,5 @@
     <color name="textTitle">#F2E5D5</color>
     <color name="colorPrimaryDark">#4F5559</color>
     <color name="colorSecondary">#90A68D</color>
+    <color name="invertBg">#D9CCC5</color>
 </resources>
