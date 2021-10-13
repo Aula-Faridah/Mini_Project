@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Mini Project</string>
+    <string name="mainTitle">Education Game</string>
+    <string name="transition_name">fade_trans</string>
+</resources>
