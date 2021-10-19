@@ -1,5 +1,61 @@
 <resources>
-    <string name="app_name">Mini Project</string>
-    <string name="mainTitle">Education Game</string>
-    <string name="transition_name">fade_trans</string>
+    <string name="app_name">Eductaion Game</string>
+    <string name="animal">Suara Hewan</string>
+    <string name="insect_content">Insects or Insecta (from Latin insectum) are hexapod
+invertebrates and the largest group within the arthropod phylum. Definitions and circumscriptions vary; usually,
+insects comprise a class within the Arthropoda. As used
+here, the term Insecta is synonymous with Ectognatha.
+Insects have a chitinous exoskeleton, a three-part body
+(head, thorax and abdomen), three pairs of jointed legs,
+compound eyes and one pair of antennae. Insects are the
+most diverse group of animals; they include more than a
+million described species and represent more than half
+of all known living organisms. The total number of
+extant species is estimated at between six and ten
+million; potentially over 90% of the animal life forms on
+Earth are insects. Insects may be found in nearly all
+environments, although only a small number of species
+reside in the oceans, which are dominated by another
+arthropod group, crustaceans.</string>
+    <string name="invert_info">Any animal that lacks a vertebral column, or backbone, in
+contrast to the cartilaginous or bony vertebrates. More
+than 90 percent of all living animal species are
+invertebrates.</string>
+    <string-array name="icon">
+        <item>Fruites</item>
+        <item>Animal</item>
+    </string-array>
+    <string-array name="animal_video">
+        <item>videofishes</item>
+        <item>videoamphibians</item>
+        <item>videoreptiles</item>
+        <item>videobirds</item>
+        <item>videomammals</item>
+    </string-array>
+    <string-array name="titles">
+        <item>Fruites</item>
+        <item>Animal</item>
+    </string-array>
+    <string-array name="animal_info">
+        <item>A group of cold-blooded vertebrates that breathe with gills rather than lungs, live in water, and generally lay eggs, although some bear their young alive.</item>
+        <item>A group of cold-blooded animals which can live on land or in water and who breathes with gills when young and with lungs as an adult.</item>
+    </string-array>
+    <string name="anggur_content">Anggur merupakan tanaman buah yang dikenal karena mengandung banyak senyawa polifenol dan resveratol yang berperan aktif dalam berbagai metabolisme tubuh, serta mampu mencegah terbentuknya sel kanker dan berbagai penyakit lainnya.
+Vitamin C: 13% 10.8 mg
+Magnesium: 2% 7 mg
+Kalsium: 1% 10 mg</string>
+    <string name="apel_content">Apel adalah jenis buah-buahan, atau buah yang dihasilkan dari pohon buah apel. Buah apel biasanya berwarna merah kulitnya jika masak dan (siap dimakan), namun bisa juga kulitnya berwarna hijau atau kuning.
+Zat besi: 1% 0.12 mg
+Vitamin A equiv: 0% 3 μg
+Magnesium: 1% 5 mg</string>
+    <string name="semangka_content">Buah semangka memiliki kulit yang keras, berwarna hijau pekat atau hijau muda dengan larik-larik hijau tua.</string>
+    <string name="nanas_content">tumbuhan tropis dengan buah yang dapat dimakan dan tumbuhan yang paling penting secara ekonomi dalam famili Bromeliaceae. Nanas adalah tumbuhan asli Amerika Selatan, dan telah dibudidayakan disana selama berabad-abad.</string>
+    <string name="pisang_content">nama umum yang diberikan pada tumbuhan terna berukuran besar dengan daun memanjang dan besar yang tumbuh langsung dari bagian tangkai. ... Bagian bunga pada pisang akan membentuk buah yang disebut sisir. Buah pisang berkelompok dalam satu bunga majemuk dengan ukuran yang semakin ke bawah semakin mengecil.</string>
+    <string name="stoberi_content">merupakan tanaman herba tahunan. Tanaman stroberi memiliki batang yang pendek, dengan daun majemuk yang pinggirannya bergerigi. Pada ketiak daun terdapat pucuk aksilar</string>
+    <string name="pepaya_content">tumbuhan yang berasal dari Meksiko bagian selatan dan bagian utara dari Amerika Selatan, dan kini menyebar lapang dan banyak ditanam di seluruh kawasan tropis sebagai diambil buahnya. C. papaya adalah satu-satunya jenis dalam genus Carica.</string>
+    <string name="jeruk_content">semua tumbuhan berbunga anggota marga Citrus dari suku Rutaceae (suku jeruk-jerukan). Anggotanya berbentuk pohon dengan buah yang berdaging dengan rasa masam yang segar, meskipun banyak di antara anggotanya yang memiliki rasa manis. ... Di Jawa, "limau" (atau "limo") berarti "jeruk nipis"</string>
+    <string name="mangga_content">termasuk ke dalam marga Mangifera, yang terdiri dari 35-40 anggota dari suku Anacardiaceae. ... Buah ini dikenal pula dalam berbagai bahasa daerah, seperti pelem atau poh (Jw.)</string>
+    <string name="pir_content">sebutan untuk pohon dari genus Pyrus dan buah yang dihasilkan. Beberapa spesies pohon pir menghasilkan buah yang enak dimakan karena mengandung banyak air, masir dan manis. Pear yaitu nama dalam bahasa Inggris</string>
+    <string name="buahnaga_content">mempunyai daging buah seperti buah kiwi. Daging buahnya yang berwarna putih, merah, atau merah tua (keunguan), bertaburan biji hitam kecil-kecil. Rasa buah naga manis, segar, dan sedikit asam. Ketebalan kulit buah naga mencapai 2-3 cm, permukaan kulit buah naga terdapat jumbai atau jambul berukuran 1-2 cm.</string>
+    <string name="kiwi_content">nama yang diberikan kepada buah beri yang bisa dimakan dari beberapa jenis tanaman kayu merambat dalam genus "Actinidia". ... Buah ini awalnya bernama Gosberi Cina, buah ini dinamai kembali dengan alasan ekspor marketing pada tahun 1950-an, menjadi melonette, kemudian kiwi</string>
 </resources>

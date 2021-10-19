@@ -7,9 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="colorMain">#54436B</color>
-    <color name="textTitle">#F2E5D5</color>
-    <color name="colorPrimaryDark">#4F5559</color>
-    <color name="colorSecondary">#90A68D</color>
-    <color name="invertBg">#D9CCC5</color>
+    <color name="textTitle">#FCF08F</color>
+    <color name="invert_color">#ACACAC</color>
+    <color name="an1">#ACE7FF</color>
+    <color name="an2">#F8DCD0</color>
+    <color name="an3">#F08080</color>
+    <color name="an4">#B28DFF</color>
+    <color name="an5">#F1B1FF</color>
+
+    <array name="menu_color">
+        <item>@color/an4</item>
+        <item>@color/an5</item>
+    </array>
 </resources>
