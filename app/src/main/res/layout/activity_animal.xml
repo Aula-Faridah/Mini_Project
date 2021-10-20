@@ -36,20 +36,20 @@
         android:alignmentMode = "alignMargins"
         android:columnOrderPreserved = "false"
         android:layout_weight = "8"
-        android:padding = "14dp"
+        android:padding = "10dp"
         android:background="@color/an4">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
             app:cardElevation="8dp"
             app:cardCornerRadius="10dp"
             android:layout_marginRight="2dp"
-            android:layout_marginBottom = "16dp">
+            android:layout_marginBottom = "10dp">
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="110dp"
+                android:layout_height="100dp"
                 android:layout_gravity = "center_horizontal"
                 android:layout_margin = "16dp">
 
@@ -71,19 +71,18 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
             app:cardElevation="8dp"
             app:cardCornerRadius="10dp"
-            android:layout_marginLeft="3dp"
-            android:layout_marginRight="3dp"
+            android:layout_marginRight="2dp"
             android:layout_marginBottom = "16dp">
 
             <LinearLayout
-                android:layout_gravity = "center_horizontal|center_vertical"
+                android:layout_gravity = "center_horizontal"
                 android:layout_margin = "16dp"
-                android:layout_width = "wrap_content"
-                android:layout_height = "wrap_content">
+                android:layout_width = "110dp"
+                android:layout_height = "100dp">
 
                 <ImageButton
                     android:id="@+id/imgAnjing"
@@ -101,19 +100,18 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
             app:cardElevation="8dp"
             app:cardCornerRadius="10dp"
-            android:layout_marginLeft="3dp"
             android:layout_marginRight="2dp"
             android:layout_marginBottom = "16dp">
 
             <LinearLayout
-                android:layout_gravity = "center_horizontal|center_vertical"
+                android:layout_gravity = "center_horizontal"
                 android:layout_margin = "16dp"
-                android:layout_width = "wrap_content"
-                android:layout_height = "wrap_content">
+                android:layout_width = "110dp"
+                android:layout_height = "110dp">
 
                 <ImageButton
                     android:id="@+id/imgBebek"
@@ -131,8 +129,8 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
             app:cardElevation="8dp"
             app:cardCornerRadius="10dp"
             android:layout_marginRight="2dp"
@@ -141,8 +139,8 @@
             <LinearLayout
                 android:layout_gravity = "center_horizontal|center_vertical"
                 android:layout_margin = "16dp"
-                android:layout_width = "wrap_content"
-                android:layout_height = "wrap_content">
+                android:layout_width="110dp"
+                android:layout_height="100dp">
 
                 <ImageButton
                     android:id="@+id/imgKambing"
@@ -160,8 +158,8 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
             app:cardElevation="8dp"
             app:cardCornerRadius="10dp"
             android:layout_marginLeft="3dp"
@@ -171,8 +169,8 @@
             <LinearLayout
                 android:layout_gravity = "center_horizontal|center_vertical"
                 android:layout_margin = "16dp"
-                android:layout_width = "wrap_content"
-                android:layout_height = "wrap_content">
+                android:layout_width="110dp"
+                android:layout_height="100dp">
 
                 <ImageButton
                     android:id="@+id/imgKuda"
@@ -190,8 +188,8 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
             app:cardElevation="8dp"
             app:cardCornerRadius="10dp"
             android:layout_marginLeft="3dp"
@@ -201,8 +199,8 @@
             <LinearLayout
                 android:layout_gravity = "center_horizontal|center_vertical"
                 android:layout_margin = "16dp"
-                android:layout_width = "wrap_content"
-                android:layout_height = "wrap_content">
+                android:layout_width="110dp"
+                android:layout_height="100dp">
 
                 <ImageButton
                     android:id="@+id/imgSapi"
@@ -220,8 +218,8 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
             app:cardElevation="8dp"
             app:cardCornerRadius="10dp"
             android:layout_marginRight="2dp"
@@ -230,8 +228,8 @@
             <LinearLayout
                 android:layout_gravity = "center_horizontal|center_vertical"
                 android:layout_margin = "16dp"
-                android:layout_width = "wrap_content"
-                android:layout_height = "wrap_content">
+                android:layout_width="110dp"
+                android:layout_height="100dp">
 
                 <ImageButton
                     android:id="@+id/imgLebah"
@@ -249,8 +247,8 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
             app:cardElevation="8dp"
             app:cardCornerRadius="10dp"
             android:layout_marginLeft="3dp"
@@ -260,8 +258,8 @@
             <LinearLayout
                 android:layout_gravity = "center_horizontal|center_vertical"
                 android:layout_margin = "16dp"
-                android:layout_width = "wrap_content"
-                android:layout_height = "wrap_content">
+                android:layout_width="110dp"
+                android:layout_height="100dp">
 
                 <ImageButton
                     android:id="@+id/imgKatak"
@@ -279,8 +277,8 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
             app:cardElevation="8dp"
             app:cardCornerRadius="10dp"
             android:layout_marginLeft="3dp"
@@ -290,8 +288,8 @@
             <LinearLayout
                 android:layout_gravity = "center_horizontal|center_vertical"
                 android:layout_margin = "16dp"
-                android:layout_width = "wrap_content"
-                android:layout_height = "wrap_content">
+                android:layout_width="110dp"
+                android:layout_height="100dp">
 
                 <ImageButton
                     android:id="@+id/imgLumba"
@@ -309,8 +307,8 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
             app:cardElevation="8dp"
             app:cardCornerRadius="10dp"
             android:layout_marginRight="2dp"
@@ -319,8 +317,8 @@
             <LinearLayout
                 android:layout_gravity = "center_horizontal|center_vertical"
                 android:layout_margin = "16dp"
-                android:layout_width = "wrap_content"
-                android:layout_height = "wrap_content">
+                android:layout_width="110dp"
+                android:layout_height="100dp">
 
                 <ImageButton
                     android:id="@+id/imgBurung"
@@ -338,8 +336,8 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
             app:cardElevation="8dp"
             app:cardCornerRadius="10dp"
             android:layout_marginLeft="3dp"
@@ -349,8 +347,8 @@
             <LinearLayout
                 android:layout_gravity = "center_horizontal|center_vertical"
                 android:layout_margin = "16dp"
-                android:layout_width = "wrap_content"
-                android:layout_height = "wrap_content">
+                android:layout_width="110dp"
+                android:layout_height="100dp">
 
                 <ImageButton
                     android:id="@+id/imgGajah"
@@ -368,8 +366,8 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
             app:cardElevation="8dp"
             app:cardCornerRadius="10dp"
             android:layout_marginLeft="3dp"
@@ -379,8 +377,8 @@
             <LinearLayout
                 android:layout_gravity = "center_horizontal|center_vertical"
                 android:layout_margin = "16dp"
-                android:layout_width = "wrap_content"
-                android:layout_height = "wrap_content">
+                android:layout_width="110dp"
+                android:layout_height="100dp">
 
                 <ImageButton
                     android:id="@+id/imgSinga"
@@ -397,8 +395,8 @@
         </androidx.cardview.widget.CardView>
     </GridLayout>
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:orientation="horizontal">
 
         <ImageButton

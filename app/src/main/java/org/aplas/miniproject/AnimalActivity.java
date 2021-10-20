@@ -78,77 +78,47 @@ public class AnimalActivity extends AppCompatActivity {
             }
         });
 
-//        imgLebah.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(),SoundBase.class);
-//                intent.putExtra("TITLE_ANIMAL", "Insects");
-//                ActivityOptionsCompat options =
-//                        ActivityOptionsCompat.makeSceneTransitionAnimation(
-//                                AnimalActivity.this, imgLebah, ViewCompat.getTransitionName(imgLebah));
-//                startActivity(intent, options.toBundle());
-//            }
-//        });
-//
-//        imgKatak.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(),SoundBase.class);
-//                intent.putExtra("TITLE_ANIMAL", "Insects");
-//                ActivityOptionsCompat options =
-//                        ActivityOptionsCompat.makeSceneTransitionAnimation(
-//                                AnimalActivity.this, imgKatak, ViewCompat.getTransitionName(imgKatak));
-//                startActivity(intent, options.toBundle());
-//            }
-//        });
-//
-//        imgLumba.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(),SoundBase.class);
-//                intent.putExtra("TITLE_ANIMAL", "Insects");
-//                ActivityOptionsCompat options =
-//                        ActivityOptionsCompat.makeSceneTransitionAnimation(
-//                                AnimalActivity.this, imgLumba, ViewCompat.getTransitionName(imgLumba));
-//                startActivity(intent, options.toBundle());
-//            }
-//        });
-//
-//        imgBurung.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(),SoundBase.class);
-//                intent.putExtra("TITLE_ANIMAL", "Insects");
-//                ActivityOptionsCompat options =
-//                        ActivityOptionsCompat.makeSceneTransitionAnimation(
-//                                AnimalActivity.this, imgBurung, ViewCompat.getTransitionName(imgBurung));
-//                startActivity(intent, options.toBundle());
-//            }
-//        });
-//
-//        imgGajah.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(),SoundBase.class);
-//                intent.putExtra("TITLE_ANIMAL", "Insects");
-//                ActivityOptionsCompat options =
-//                        ActivityOptionsCompat.makeSceneTransitionAnimation(
-//                                AnimalActivity.this, imgGajah, ViewCompat.getTransitionName(imgGajah));
-//                startActivity(intent, options.toBundle());
-//            }
-//        });
-//
-//        imgSinga.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(),SoundBase.class);
-//                intent.putExtra("TITLE_ANIMAL", "Insects");
-//                ActivityOptionsCompat options =
-//                        ActivityOptionsCompat.makeSceneTransitionAnimation(
-//                                AnimalActivity.this, imgSinga, ViewCompat.getTransitionName(imgSinga));
-//                startActivity(intent, options.toBundle());
-//            }
-//        });
+        imgLebah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playSound(7);
+            }
+        });
+
+        imgKatak.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playSound(8);
+            }
+        });
+
+        imgLumba.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playSound(9);
+            }
+        });
+
+        imgBurung.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playSound(10);
+            }
+        });
+
+        imgGajah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playSound(11);
+            }
+        });
+
+        imgSinga.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playSound(12);
+            }
+        });
         buttonPrev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -186,6 +156,24 @@ public class AnimalActivity extends AppCompatActivity {
         }else if (arg==6){
             Toast.makeText(this, isPlaying+" sapi", Toast.LENGTH_LONG).show();
             audio = MediaPlayer.create(this, R.raw.sapi);
+        }else if (arg==7){
+            Toast.makeText(this, isPlaying+" Lebah", Toast.LENGTH_LONG).show();
+            audio = MediaPlayer.create(this, R.raw.lebah);
+        }else if (arg==8){
+            Toast.makeText(this, isPlaying+" Katak", Toast.LENGTH_LONG).show();
+            audio = MediaPlayer.create(this, R.raw.katak);
+        }else if (arg==9){
+            Toast.makeText(this, isPlaying+" Lumba-Lumba", Toast.LENGTH_LONG).show();
+            audio = MediaPlayer.create(this, R.raw.lumba);
+        }else if (arg==10){
+            Toast.makeText(this, isPlaying+" Burung Hantu", Toast.LENGTH_LONG).show();
+            audio = MediaPlayer.create(this, R.raw.burunghantu);
+        }else if (arg==11){
+            Toast.makeText(this, isPlaying+" Gajah", Toast.LENGTH_LONG).show();
+            audio = MediaPlayer.create(this, R.raw.gajah);
+        }else if (arg==12){
+            Toast.makeText(this, isPlaying+" Singa", Toast.LENGTH_LONG).show();
+            audio = MediaPlayer.create(this, R.raw.singa);
         }
         audio.setLooping(false); // Set looping
         audio.start();

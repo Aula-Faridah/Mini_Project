@@ -8,26 +8,27 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class FruitActivity extends AppCompatActivity {
-    private ImageButton imgAnggur, imgStoberi, imgKiwi, imgJeruk, imgApel, imgMangga, imgNaga, imgPir, imgPisang, imgPepaya, imgNanas, imgSemangka;
+    private ImageView imgAnggur, imgStoberi, imgKiwi, imgJeruk, imgApel, imgMangga, imgNaga, imgPir, imgPisang, imgPepaya, imgNanas, imgSemangka;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fruit);
 
-        imgAnggur = (ImageButton) findViewById(R.id.imgAnggur);
-        imgStoberi = (ImageButton) findViewById(R.id.imgStoberi);
-        imgKiwi = (ImageButton) findViewById(R.id.imgKiwi);
-        imgJeruk = (ImageButton) findViewById(R.id.imgJeruk);
-        imgApel = (ImageButton) findViewById(R.id.imgApel);
-        imgMangga = (ImageButton) findViewById(R.id.imgMangga);
-        imgNaga = (ImageButton) findViewById(R.id.imgNaga);
-        imgPir = (ImageButton) findViewById(R.id.imgPir);
-        imgPisang = (ImageButton) findViewById(R.id.imgPisang);
-        imgPepaya = (ImageButton) findViewById(R.id.imgPepaya);
-        imgNanas = (ImageButton) findViewById(R.id.imgNanas);
-        imgSemangka = (ImageButton) findViewById(R.id.imgSemangka);
+        imgAnggur = (ImageView) findViewById(R.id.imgAnggur);
+        imgStoberi = (ImageView) findViewById(R.id.imgStoberi);
+        imgKiwi = (ImageView) findViewById(R.id.imgKiwi);
+        imgJeruk = (ImageView) findViewById(R.id.imgJeruk);
+        imgApel = (ImageView) findViewById(R.id.imgApel);
+        imgMangga = (ImageView) findViewById(R.id.imgMangga);
+        imgNaga = (ImageView) findViewById(R.id.imgNaga);
+        imgPir = (ImageView) findViewById(R.id.imgPir);
+        imgPisang = (ImageView) findViewById(R.id.imgPisang);
+        imgPepaya = (ImageView) findViewById(R.id.imgPepaya);
+        imgNanas = (ImageView) findViewById(R.id.imgNanas);
+        imgSemangka = (ImageView) findViewById(R.id.imgSemangka);
 
         imgAnggur.setOnClickListener(new View.OnClickListener() {
             @Override

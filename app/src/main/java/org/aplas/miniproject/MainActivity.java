@@ -24,56 +24,15 @@ public class MainActivity extends AppCompatActivity {
 
         rcView = (RecyclerView) findViewById(R.id.dataView);
         rcView.setLayoutManager(new LinearLayoutManager(this));
-        loadAnimalData();
         mAdapter.setOnItemClickListener(new DataAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-                TextView itemTitle = (TextView) view.findViewById(R.id.animalTitle);
-                if (itemTitle.getText().toString().equals("Invertebrates")) {
-                    openAnimalActivity();
-                }
+                Intent invert = new Intent(getApplicationContext(),FruitActivity.class);
+                startActivity(invert);
             }
         });
+
     }
 
-    private void loadAnimalData() {
-//Initialize the adapter and set it ot the RecyclerView
-        mAdapter = new DataAdapter(this, getAnimalData());
-        ItemTouchHelper.Callback callback = new ItemMoveCallback(mAdapter);
-        ItemTouchHelper touchHelper = new ItemTouchHelper(callback);
-        touchHelper.attachToRecyclerView(rcView);
-        rcView.setAdapter(mAdapter);
-//Notify the adapter of the change
-        mAdapter.notifyDataSetChanged();
-    }
-    private void openAnimalActivity() {
-        Intent intent = new Intent(getApplicationContext(),AnimalActivity.class);
-        startActivity(intent);
-        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
-    }
-    private ArrayList<DataItem> getAnimalData() {
-//Get the resources from the XML file
-        String[] listTitles = getResources().getStringArray(R.array.titles);
-        int[] listColor = getResources().getIntArray(R.array.menu_color);
-        String[] listInfo = getResources().getStringArray(R.array.animal_info);
-        String[] listIcon = getResources().getStringArray(R.array.icon);
-        ArrayList<DataItem> data = new ArrayList<>();
-//Create the ArrayList with the titles and information
-        for (int i=0; i<listTitles.length; i++) {
-            data.add(new DataItem(listTitles[i],listInfo[i],listColor[i],
-                    getId(listIcon[i],R.drawable.class)));
-        }
-//Add Invertebrates
-        data.add(new DataItem("Invertebrates",this.getString(R.string.invert_info),
-                this.getColor(R.color.invert_color), R.drawable.animal));
-        return data;
-    }
-    public static int getId(String resourceName, Class<?> c) {
-        try {
-            Field idField = c.getDeclaredField(resourceName);
-            return idField.getInt(idField);
-        } catch (Exception e) {
-            return -1;
-        }
-    }
+
 }

@@ -53,7 +53,7 @@
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content">
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/imgAnggur"
                     android:layout_gravity="left"
                     android:transitionName="fade_trans"
@@ -83,7 +83,7 @@
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content">
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/imgStoberi"
                     android:layout_gravity="left"
                     android:transitionName="fade_trans"
@@ -113,7 +113,7 @@
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content">
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/imgKiwi"
                     android:layout_gravity="left"
                     android:transitionName="fade_trans"
@@ -142,7 +142,7 @@
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content">
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/imgJeruk"
                     android:layout_gravity="left"
                     android:transitionName="fade_trans"
@@ -172,7 +172,7 @@
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content">
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/imgApel"
                     android:layout_gravity="left"
                     android:transitionName="fade_trans"
@@ -202,7 +202,7 @@
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content">
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/imgMangga"
                     android:layout_gravity="left"
                     android:transitionName="fade_trans"
@@ -231,7 +231,7 @@
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content">
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/imgNaga"
                     android:layout_gravity="left"
                     android:transitionName="fade_trans"
@@ -261,7 +261,7 @@
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content">
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/imgPir"
                     android:layout_gravity="left"
                     android:transitionName="fade_trans"
@@ -291,7 +291,7 @@
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content">
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/imgPisang"
                     android:layout_gravity="left"
                     android:transitionName="fade_trans"
@@ -320,7 +320,7 @@
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content">
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/imgPepaya"
                     android:layout_gravity="left"
                     android:transitionName="fade_trans"
@@ -350,7 +350,7 @@
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content">
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/imgNanas"
                     android:layout_gravity="left"
                     android:transitionName="fade_trans"
@@ -380,7 +380,7 @@
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content">
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/imgSemangka"
                     android:layout_gravity="left"
                     android:transitionName="fade_trans"
