@@ -8,13 +8,14 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class AnimalActivity extends AppCompatActivity {
     private static final String isPlaying = "Media is Playing";
     MediaPlayer audio;
-    private ImageButton imgKucing, imgAnjing, imgBebek, imgKambing, imgKuda, imgSapi, imgLebah, imgKatak, imgLumba, imgBurung, imgGajah, imgSinga;
+    private ImageButton buttonPrev,imgKucing, imgAnjing, imgBebek, imgKambing, imgKuda, imgSapi, imgLebah, imgKatak, imgLumba, imgBurung, imgGajah, imgSinga;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +33,7 @@ public class AnimalActivity extends AppCompatActivity {
         imgBurung = (ImageButton) findViewById(R.id.imgBurung);
         imgGajah = (ImageButton) findViewById(R.id.imgGajah);
         imgSinga = (ImageButton) findViewById(R.id.imgSinga);
+        buttonPrev = (ImageButton) findViewById(R.id.buttonPrev);
 
         imgKucing.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -147,6 +149,13 @@ public class AnimalActivity extends AppCompatActivity {
 //                startActivity(intent, options.toBundle());
 //            }
 //        });
+        buttonPrev.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
+            }
+        });
     }
 
     private void playSound(int arg) {
