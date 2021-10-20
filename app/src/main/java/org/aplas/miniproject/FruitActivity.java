@@ -34,7 +34,7 @@ public class FruitActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SubFruitActivity.class);
-                intent.putExtra("TITLE_ANIMAL", "Insects");
+                intent.putExtra("TITLE_FRUIT", "Anggur");
                 ActivityOptionsCompat options =
                         ActivityOptionsCompat.makeSceneTransitionAnimation(
                                 FruitActivity.this, imgAnggur, ViewCompat.getTransitionName(imgAnggur));
@@ -46,7 +46,7 @@ public class FruitActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SubFruitActivity.class);
-                intent.putExtra("TITLE_ANIMAL", "Insects");
+                intent.putExtra("TITLE_FRUIT", "Stroberi");
                 ActivityOptionsCompat options =
                         ActivityOptionsCompat.makeSceneTransitionAnimation(
                                 FruitActivity.this, imgStoberi, ViewCompat.getTransitionName(imgStoberi));
@@ -58,7 +58,7 @@ public class FruitActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SubFruitActivity.class);
-                intent.putExtra("TITLE_ANIMAL", "Insects");
+                intent.putExtra("TITLE_FRUIT", "Kiwi");
                 ActivityOptionsCompat options =
                         ActivityOptionsCompat.makeSceneTransitionAnimation(
                                 FruitActivity.this, imgKiwi, ViewCompat.getTransitionName(imgKiwi));
@@ -70,7 +70,7 @@ public class FruitActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SubFruitActivity.class);
-                intent.putExtra("TITLE_ANIMAL", "Insects");
+                intent.putExtra("TITLE_FRUIT", "Jeruk");
                 ActivityOptionsCompat options =
                         ActivityOptionsCompat.makeSceneTransitionAnimation(
                                 FruitActivity.this, imgJeruk, ViewCompat.getTransitionName(imgJeruk));
@@ -82,7 +82,7 @@ public class FruitActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SubFruitActivity.class);
-                intent.putExtra("TITLE_ANIMAL", "Insects");
+                intent.putExtra("TITLE_FRUIT", "Apel");
                 ActivityOptionsCompat options =
                         ActivityOptionsCompat.makeSceneTransitionAnimation(
                                 FruitActivity.this, imgApel, ViewCompat.getTransitionName(imgApel));
@@ -94,7 +94,7 @@ public class FruitActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SubFruitActivity.class);
-                intent.putExtra("TITLE_ANIMAL", "Insects");
+                intent.putExtra("TITLE_FRUIT", "Mangga");
                 ActivityOptionsCompat options =
                         ActivityOptionsCompat.makeSceneTransitionAnimation(
                                 FruitActivity.this, imgMangga, ViewCompat.getTransitionName(imgMangga));
@@ -106,7 +106,7 @@ public class FruitActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SubFruitActivity.class);
-                intent.putExtra("TITLE_ANIMAL", "Insects");
+                intent.putExtra("TITLE_FRUIT", "Naga");
                 ActivityOptionsCompat options =
                         ActivityOptionsCompat.makeSceneTransitionAnimation(
                                 FruitActivity.this, imgNaga, ViewCompat.getTransitionName(imgNaga));
@@ -118,7 +118,7 @@ public class FruitActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SubFruitActivity.class);
-                intent.putExtra("TITLE_ANIMAL", "Insects");
+                intent.putExtra("TITLE_FRUIT", "Pir");
                 ActivityOptionsCompat options =
                         ActivityOptionsCompat.makeSceneTransitionAnimation(
                                 FruitActivity.this, imgPir, ViewCompat.getTransitionName(imgPir));
@@ -130,7 +130,7 @@ public class FruitActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SubFruitActivity.class);
-                intent.putExtra("TITLE_ANIMAL", "Insects");
+                intent.putExtra("TITLE_FRUIT", "Pisang");
                 ActivityOptionsCompat options =
                         ActivityOptionsCompat.makeSceneTransitionAnimation(
                                 FruitActivity.this, imgPisang, ViewCompat.getTransitionName(imgPisang));
@@ -142,7 +142,7 @@ public class FruitActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SubFruitActivity.class);
-                intent.putExtra("TITLE_ANIMAL", "Insects");
+                intent.putExtra("TITLE_FRUIT", "Pepaya");
                 ActivityOptionsCompat options =
                         ActivityOptionsCompat.makeSceneTransitionAnimation(
                                 FruitActivity.this, imgPepaya, ViewCompat.getTransitionName(imgPepaya));
@@ -154,7 +154,7 @@ public class FruitActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SubFruitActivity.class);
-                intent.putExtra("TITLE_ANIMAL", "Insects");
+                intent.putExtra("TITLE_FRUIT", "Nanas");
                 ActivityOptionsCompat options =
                         ActivityOptionsCompat.makeSceneTransitionAnimation(
                                 FruitActivity.this, imgNanas, ViewCompat.getTransitionName(imgNanas));
@@ -166,7 +166,7 @@ public class FruitActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SubFruitActivity.class);
-                intent.putExtra("TITLE_ANIMAL", "Insects");
+                intent.putExtra("TITLE_FRUIT", "Semangka");
                 ActivityOptionsCompat options =
                         ActivityOptionsCompat.makeSceneTransitionAnimation(
                                 FruitActivity.this, imgSemangka, ViewCompat.getTransitionName(imgSemangka));

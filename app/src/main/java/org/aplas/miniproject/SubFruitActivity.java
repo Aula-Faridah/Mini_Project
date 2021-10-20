@@ -73,7 +73,7 @@ public class SubFruitActivity extends AppCompatActivity {
         }
         subLayout.setOnClickListener(new View.OnClickListener() {
             @Override
-                    public void onClick(View v) {
+            public void onClick(View v) {
                 finishAfterTransition();
             }
         });
