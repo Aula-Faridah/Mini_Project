@@ -13,13 +13,13 @@
             android:name=".SubFruitActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".FruitActivity"
             android:exported="true" />
         <activity
             android:name=".AnimalActivity"
             android:exported="true" />
         <activity
-            android:name=".FruitActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

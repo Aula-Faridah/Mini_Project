@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:id="@+id/mainLayout"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/an3">
 
     <TextView
         android:id="@+id/mainTitle"
@@ -19,14 +20,35 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:textSize="20pt"
+        android:textColor="@color/white"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/dataView"
-        android:scrollbars="vertical">
+        android:text="Pilih mana yang mau kamu coba : "
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textSize="8pt"/>
 
-    </androidx.recyclerview.widget.RecyclerView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/buttonAnimal"
+        android:text="SUARA BINATANG"
+        android:textStyle="bold"
+        android:textSize="10pt"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/buttonFruit"
+        android:text="MENGENAL BUAH"
+        android:textStyle="bold"
+        android:textSize="10pt"
+        android:layout_margin="5dp"/>
 
 </LinearLayout>

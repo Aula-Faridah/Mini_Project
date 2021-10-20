@@ -7,11 +7,13 @@ import androidx.core.view.ViewCompat;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class FruitActivity extends AppCompatActivity {
     private ImageView imgAnggur, imgStoberi, imgKiwi, imgJeruk, imgApel, imgMangga, imgNaga, imgPir, imgPisang, imgPepaya, imgNanas, imgSemangka;
+    private ImageButton buttonPrev;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,8 @@ public class FruitActivity extends AppCompatActivity {
         imgPepaya = (ImageView) findViewById(R.id.imgPepaya);
         imgNanas = (ImageView) findViewById(R.id.imgNanas);
         imgSemangka = (ImageView) findViewById(R.id.imgSemangka);
+
+        buttonPrev = (ImageButton) findViewById(R.id.buttonPrev);
 
         imgAnggur.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -171,6 +175,14 @@ public class FruitActivity extends AppCompatActivity {
                         ActivityOptionsCompat.makeSceneTransitionAnimation(
                                 FruitActivity.this, imgSemangka, ViewCompat.getTransitionName(imgSemangka));
                 startActivity(intent, options.toBundle());
+            }
+        });
+
+        buttonPrev.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
             }
         });
     }
