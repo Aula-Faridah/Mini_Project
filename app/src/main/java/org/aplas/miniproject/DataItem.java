@@ -1,47 +1,31 @@
 package org.aplas.miniproject;
 
 public class DataItem {
-    private String title;
-    private String info;
-    private int color;
-    private int icon;
+    private String name;
+    private String from;
+    private String photo;
 
-    public DataItem(String mTitle, String mInfo, int mColor, int mIcon) {
-        title = mTitle;
-        info = mInfo;
-        color = mColor;
-        icon = mIcon;
+    public String getName() {
+        return name;
     }
 
-    public String getTitle() {
-        return title;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getInfo() {
-        return info;
+    public String getFrom() {
+        return from;
     }
 
-    public int getColor() {
-        return color;
+    public void setFrom(String from) {
+        this.from = from;
     }
 
-    public int getIcon() {
-        return icon;
+    public String getPhoto() {
+        return photo;
     }
 
-    public void setTitle(String val) {
-        this.title = val;
-    }
-
-    public void setInfo(String val) {
-        this.info = val;
-    }
-
-    public void setColor(int val) {
-        this.color = val;
-    }
-
-    public void setIcon(int val) {
-        this.icon = val;
+    public void setPhoto(String photo) {
+        this.photo = photo;
     }
 }
