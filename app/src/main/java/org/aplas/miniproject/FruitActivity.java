@@ -3,6 +3,8 @@ package org.aplas.miniproject;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityOptionsCompat;
 import androidx.core.view.ViewCompat;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,172 +13,34 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class FruitActivity extends AppCompatActivity {
-    private ImageView imgAnggur, imgStoberi, imgKiwi, imgJeruk, imgApel, imgMangga, imgNaga, imgPir, imgPisang, imgPepaya, imgNanas, imgSemangka;
-    private ImageButton buttonPrev;
+    private RecyclerView rvHeroes;
+    private ArrayList<DataItem> list = new ArrayList<>();
+    private String title = "Mode List";
+    private DataAdapter mAdapter;
+    ArrayList<String> personNames = new ArrayList<>(Arrays.asList("Anggur", "Stroberi", "Kiwi", "Jeruk", "Apel", "Mangga", "Naga","Pir", "Pisang", "Pepaya", "Nanas", "Semangka"));
+    ArrayList<Integer> personImages = new ArrayList<>(Arrays.asList(R.drawable.anggur, R.drawable.stoberi, R.drawable.kiwi, R.drawable.jeruk, R.drawable.apel, R.drawable.mangga, R.drawable.buahnaga,R.drawable.pir, R.drawable.pisang, R.drawable.pepaya, R.drawable.nanas, R.drawable.semangka));
+    ArrayList<Integer> Detail = new ArrayList<>(Arrays.asList(R.string.anggur_content,R.string.stoberi_content,  R.string.kiwi_content, R.string.jeruk_content, R.string.apel_content, R.string.mangga_content, R.string.buahnaga_content, R.string.pir_content, R.string.pisang_content, R.string.pepaya_content, R.string.nanas_content, R.string.semangka_content));
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fruit);
 
-        imgAnggur = (ImageView) findViewById(R.id.imgAnggur);
-        imgStoberi = (ImageView) findViewById(R.id.imgStoberi);
-        imgKiwi = (ImageView) findViewById(R.id.imgKiwi);
-        imgJeruk = (ImageView) findViewById(R.id.imgJeruk);
-        imgApel = (ImageView) findViewById(R.id.imgApel);
-        imgMangga = (ImageView) findViewById(R.id.imgMangga);
-        imgNaga = (ImageView) findViewById(R.id.imgNaga);
-        imgPir = (ImageView) findViewById(R.id.imgPir);
-        imgPisang = (ImageView) findViewById(R.id.imgPisang);
-        imgPepaya = (ImageView) findViewById(R.id.imgPepaya);
-        imgNanas = (ImageView) findViewById(R.id.imgNanas);
-        imgSemangka = (ImageView) findViewById(R.id.imgSemangka);
-
-        buttonPrev = (ImageButton) findViewById(R.id.buttonPrev);
-
-        imgAnggur.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SubFruitActivity.class);
-                intent.putExtra("TITLE_FRUIT", "Anggur");
-                ActivityOptionsCompat options =
-                        ActivityOptionsCompat.makeSceneTransitionAnimation(
-                                FruitActivity.this, imgAnggur, ViewCompat.getTransitionName(imgAnggur));
-                startActivity(intent, options.toBundle());
-            }
-        });
-
-        imgStoberi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SubFruitActivity.class);
-                intent.putExtra("TITLE_FRUIT", "Stroberi");
-                ActivityOptionsCompat options =
-                        ActivityOptionsCompat.makeSceneTransitionAnimation(
-                                FruitActivity.this, imgStoberi, ViewCompat.getTransitionName(imgStoberi));
-                startActivity(intent, options.toBundle());
-            }
-        });
-
-        imgKiwi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SubFruitActivity.class);
-                intent.putExtra("TITLE_FRUIT", "Kiwi");
-                ActivityOptionsCompat options =
-                        ActivityOptionsCompat.makeSceneTransitionAnimation(
-                                FruitActivity.this, imgKiwi, ViewCompat.getTransitionName(imgKiwi));
-                startActivity(intent, options.toBundle());
-            }
-        });
-
-        imgJeruk.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SubFruitActivity.class);
-                intent.putExtra("TITLE_FRUIT", "Jeruk");
-                ActivityOptionsCompat options =
-                        ActivityOptionsCompat.makeSceneTransitionAnimation(
-                                FruitActivity.this, imgJeruk, ViewCompat.getTransitionName(imgJeruk));
-                startActivity(intent, options.toBundle());
-            }
-        });
-
-        imgApel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SubFruitActivity.class);
-                intent.putExtra("TITLE_FRUIT", "Apel");
-                ActivityOptionsCompat options =
-                        ActivityOptionsCompat.makeSceneTransitionAnimation(
-                                FruitActivity.this, imgApel, ViewCompat.getTransitionName(imgApel));
-                startActivity(intent, options.toBundle());
-            }
-        });
-
-        imgMangga.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SubFruitActivity.class);
-                intent.putExtra("TITLE_FRUIT", "Mangga");
-                ActivityOptionsCompat options =
-                        ActivityOptionsCompat.makeSceneTransitionAnimation(
-                                FruitActivity.this, imgMangga, ViewCompat.getTransitionName(imgMangga));
-                startActivity(intent, options.toBundle());
-            }
-        });
-
-        imgNaga.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SubFruitActivity.class);
-                intent.putExtra("TITLE_FRUIT", "Naga");
-                ActivityOptionsCompat options =
-                        ActivityOptionsCompat.makeSceneTransitionAnimation(
-                                FruitActivity.this, imgNaga, ViewCompat.getTransitionName(imgNaga));
-                startActivity(intent, options.toBundle());
-            }
-        });
-
-        imgPir.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SubFruitActivity.class);
-                intent.putExtra("TITLE_FRUIT", "Pir");
-                ActivityOptionsCompat options =
-                        ActivityOptionsCompat.makeSceneTransitionAnimation(
-                                FruitActivity.this, imgPir, ViewCompat.getTransitionName(imgPir));
-                startActivity(intent, options.toBundle());
-            }
-        });
-
-        imgPisang.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SubFruitActivity.class);
-                intent.putExtra("TITLE_FRUIT", "Pisang");
-                ActivityOptionsCompat options =
-                        ActivityOptionsCompat.makeSceneTransitionAnimation(
-                                FruitActivity.this, imgPisang, ViewCompat.getTransitionName(imgPisang));
-                startActivity(intent, options.toBundle());
-            }
-        });
-
-        imgPepaya.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SubFruitActivity.class);
-                intent.putExtra("TITLE_FRUIT", "Pepaya");
-                ActivityOptionsCompat options =
-                        ActivityOptionsCompat.makeSceneTransitionAnimation(
-                                FruitActivity.this, imgPepaya, ViewCompat.getTransitionName(imgPepaya));
-                startActivity(intent, options.toBundle());
-            }
-        });
-
-        imgNanas.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SubFruitActivity.class);
-                intent.putExtra("TITLE_FRUIT", "Nanas");
-                ActivityOptionsCompat options =
-                        ActivityOptionsCompat.makeSceneTransitionAnimation(
-                                FruitActivity.this, imgNanas, ViewCompat.getTransitionName(imgNanas));
-                startActivity(intent, options.toBundle());
-            }
-        });
-
-        imgSemangka.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SubFruitActivity.class);
-                intent.putExtra("TITLE_FRUIT", "Semangka");
-                ActivityOptionsCompat options =
-                        ActivityOptionsCompat.makeSceneTransitionAnimation(
-                                FruitActivity.this, imgSemangka, ViewCompat.getTransitionName(imgSemangka));
-                startActivity(intent, options.toBundle());
-            }
-        });
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.rv_buah);
+        ImageButton buttonPrev = (ImageButton) findViewById(R.id.buttonPrev);
+        rvHeroes = findViewById(R.id.rv_buah);
+        rvHeroes.setHasFixedSize(true);
+        // set a GridLayoutManager with 2 number of columns , horizontal gravity and false value for reverseLayout to show the items from start to end
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(getApplicationContext(),3);
+        recyclerView.setLayoutManager(gridLayoutManager); // set LayoutManager to RecyclerView
+        //  call the constructor of CustomAdapter to send the reference and data to Adapter
+        //DataAdapter dataAdapter = new DataAdapter(AnimalActivity.this,personImages);
+        DataAdapter adapter = new DataAdapter(FruitActivity.this, personNames,personImages, Detail);
+        recyclerView.setAdapter(adapter); // set the Adapter to RecyclerView
 
         buttonPrev.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -185,5 +49,6 @@ public class FruitActivity extends AppCompatActivity {
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
             }
         });
+
     }
 }

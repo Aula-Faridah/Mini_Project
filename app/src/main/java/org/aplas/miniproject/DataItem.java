@@ -2,9 +2,15 @@ package org.aplas.miniproject;
 
 public class DataItem {
     private String name;
-    private String from;
-    private String photo;
+    private int image;
+    private int detail;
 
+    public DataItem(int image, String name, int detail) {
+        this.image = image;
+        this.name = name;
+        this.detail = detail;
+
+    }
     public String getName() {
         return name;
     }
@@ -12,20 +18,19 @@ public class DataItem {
     public void setName(String name) {
         this.name = name;
     }
-
-    public String getFrom() {
-        return from;
+    public int getImage() {
+        return image;
     }
 
-    public void setFrom(String from) {
-        this.from = from;
+    public void setImage(int image) {
+        this.image = image;
+    }
+    public int getDetail() {
+        return detail;
     }
 
-    public String getPhoto() {
-        return photo;
+    public void setDetail(int detail) {
+        this.detail = detail;
     }
 
-    public void setPhoto(String photo) {
-        this.photo = photo;
-    }
 }
