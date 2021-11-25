@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WarnaActivity">
+
+    <TextView
+        android:id="@+id/tvWarna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Warna"
+        android:textColor="#0B914C"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="210dp"
+        tools:layout_editor_absoluteY="55dp"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <TextView
+        android:id="@+id/tvWarna2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Mengenal"
+        android:textColor="#D3AC22"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="55dp"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <ImageView
+        android:id="@+id/imgHitam"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/hitam"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="162dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imgKuning"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/kuning"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="549dp"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:id="@+id/imgOrange"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/orange"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="287dp"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:id="@+id/imgGreen"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/green"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="422dp"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:id="@+id/imgCokelat"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/cokelat"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="162dp"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:id="@+id/imgBlue"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/blue"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="422dp"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:id="@+id/imgBirutua"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/birtu"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="422dp"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:id="@+id/imgred"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/red"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="287dp"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:id="@+id/imgUngu"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ungu"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="287dp"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:id="@+id/imghijau"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/jotut"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="549dp"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:id="@+id/imgWhite"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/white"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="549dp"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:id="@+id/imgGrey"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/grey"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="162dp"
+        tools:ignore="MissingConstraints"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
