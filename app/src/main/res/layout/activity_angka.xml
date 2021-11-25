@@ -1,239 +1,275 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AngkaActivity">
+    tools:context=".AngkaActivity"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tvSembilam"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sembilan"
-        android:textColor="#FF9800"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="285dp"
-        tools:layout_editor_absoluteY="529dp"
-        tools:ignore="MissingConstraints">
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Mengenal"
+            android:textColor="#D3AC22"
+            android:textSize="30sp"
+            android:layout_margin="5dp"/>
 
-    </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Angka"
+            android:textColor="#0B914C"
+            android:textSize="30sp"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/tvDelapan"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Delapan"
-        android:textColor="#FF9800"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="529dp"
-        tools:ignore="MissingConstraints">
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
 
-    </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imgSatu"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/satu"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="10dp"/>
+            <ImageView
+                android:id="@+id/imgDua"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/dua"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="10dp"/>
 
-    <TextView
-        android:id="@+id/tvTujuh"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tujuh"
-        android:textColor="#FF9800"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="529dp"
-        tools:ignore="MissingConstraints">
+            <ImageView
+                android:id="@+id/imgTiga"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/tiga"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
 
-    </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/tvEnam"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Enam"
-        android:textColor="#FF9800"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="285dp"
-        tools:layout_editor_absoluteY="388dp"
-        tools:ignore="MissingConstraints">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Satu"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
-    </TextView>
+            <TextView
+                android:id="@+id/tvDua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dua"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="90dp"
+                android:layout_marginBottom="10dp"/>
 
-    <TextView
-        android:id="@+id/tvLima"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lima"
-        android:textColor="#FF9800"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="388dp"
-        tools:ignore="MissingConstraints">
+            <TextView
+                android:id="@+id/tvTiga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiga"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="95dp"
+                android:layout_marginBottom="10dp"/>
 
-    </TextView>
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/tvEmpat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Empat"
-        android:textColor="#FF9800"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="388dp"
-        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    </TextView>
+            <ImageView
+                android:id="@+id/imgEmpat"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/empat"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="10dp"/>
 
-    <TextView
-        android:id="@+id/tvTiga"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tiga"
-        android:textColor="#FF9800"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="285dp"
-        tools:layout_editor_absoluteY="242dp"
-        tools:ignore="MissingConstraints">
+            <ImageView
+                android:id="@+id/imLima"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/lima"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="10dp"/>
 
-    </TextView>
+            <ImageView
+                android:id="@+id/imgEnam"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/enam"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="10dp"/>
 
-    <TextView
-        android:id="@+id/tvDua"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Dua"
-        android:textColor="#FF9800"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="242dp"
-        tools:ignore="MissingConstraints">
+        </LinearLayout>
 
-    </TextView>
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/alfa_slab_one"
-        android:text="Mengenal"
-        android:textColor="#D3AC22"
-        android:textSize="25sp"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="87dp"
-        tools:ignore="MissingConstraints"></TextView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/alfa_slab_one"
-        android:text="Angka"
-        android:textColor="#0B914C"
-        android:textSize="25sp"
-        tools:layout_editor_absoluteX="198dp"
-        tools:layout_editor_absoluteY="87dp"
-        tools:ignore="MissingConstraints"></TextView>
-
-    <ImageView
-        android:id="@+id/imgSatu"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@drawable/satu"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="163dp"
-        tools:ignore="MissingConstraints"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Satu"
-        android:textColor="#FF9800"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="242dp"
-        tools:ignore="MissingConstraints">
-
-    </TextView>
-
-    <ImageView
-        android:id="@+id/imgDua"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@drawable/dua"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="163dp"
-        tools:ignore="MissingConstraints"/>
-
-    <ImageView
-        android:id="@+id/imgTiga"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@drawable/tiga"
-        tools:layout_editor_absoluteX="273dp"
-        tools:layout_editor_absoluteY="163dp"
-        tools:ignore="MissingConstraints"/>
-
-    <ImageView
-        android:id="@+id/imgEmpat"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@drawable/empat"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="308dp"
-        tools:ignore="MissingConstraints"/>
-
-    <ImageView
-        android:id="@+id/imLima"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@drawable/lima"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="308dp"
-        tools:ignore="MissingConstraints"/>
-
-    <ImageView
-        android:id="@+id/imgEnam"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@drawable/enam"
-        tools:layout_editor_absoluteX="273dp"
-        tools:layout_editor_absoluteY="308dp"
-        tools:ignore="MissingConstraints"/>
-
-    <ImageView
-        android:id="@+id/imgTujuh"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@drawable/tujuh"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="451dp"
-        tools:ignore="MissingConstraints"/>
-
-    <ImageView
-        android:id="@+id/imgDelapan"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@drawable/delapan"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="451dp"
-        tools:ignore="MissingConstraints"/>
-
-    <ImageView
-        android:id="@+id/imgSembilan"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@drawable/sembilan"
-        tools:layout_editor_absoluteX="273dp"
-        tools:layout_editor_absoluteY="451dp"
-        tools:ignore="MissingConstraints"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/tvEmpat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Empat"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/tvLima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lima"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="75dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/tvEnam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enam"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="90dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgTujuh"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/tujuh"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/imgDelapan"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/delapan"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/imgSembilan"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/sembilan"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="10dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTujuh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tujuh"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/tvDelapan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delapan"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/tvSembilam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sembilan"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

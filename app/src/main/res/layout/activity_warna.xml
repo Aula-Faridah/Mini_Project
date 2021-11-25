@@ -1,140 +1,345 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WarnaActivity">
+    tools:context=".WarnaActivity"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tvWarna"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/alfa_slab_one"
-        android:text="Warna"
-        android:textColor="#0B914C"
-        android:textSize="25sp"
-        tools:layout_editor_absoluteX="210dp"
-        tools:layout_editor_absoluteY="55dp"
-        tools:ignore="MissingConstraints"></TextView>
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center_horizontal">
 
-    <TextView
-        android:id="@+id/tvWarna2"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/tvWarna2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Mengenal"
+            android:textColor="#D3AC22"
+            android:textSize="30sp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/tvWarna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Warna"
+            android:textColor="#0B914C"
+            android:textSize="30sp"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/alfa_slab_one"
-        android:text="Mengenal"
-        android:textColor="#D3AC22"
-        android:textSize="25sp"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="55dp"
-        tools:ignore="MissingConstraints"></TextView>
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
 
-    <ImageView
-        android:id="@+id/imgHitam"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@drawable/hitam"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="162dp"
-        tools:ignore="MissingConstraints" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <ImageView
-        android:id="@+id/imgKuning"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@drawable/kuning"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="549dp"
-        tools:ignore="MissingConstraints"/>
+            <ImageView
+                android:id="@+id/imgHitam"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/hitam"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="10dp"/>
 
-    <ImageView
-        android:id="@+id/imgOrange"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@drawable/orange"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="287dp"
-        tools:ignore="MissingConstraints"/>
+            <ImageView
+                android:id="@+id/imgKuning"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="10dp"/>
 
-    <ImageView
-        android:id="@+id/imgGreen"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@drawable/green"
-        tools:layout_editor_absoluteX="294dp"
-        tools:layout_editor_absoluteY="422dp"
-        tools:ignore="MissingConstraints"/>
+            <ImageView
+                android:id="@+id/imgOrange"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/grey"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="10dp"/>
 
-    <ImageView
-        android:id="@+id/imgCokelat"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@drawable/cokelat"
-        tools:layout_editor_absoluteX="294dp"
-        tools:layout_editor_absoluteY="162dp"
-        tools:ignore="MissingConstraints"/>
+        </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imgBlue"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@drawable/blue"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="422dp"
-        tools:ignore="MissingConstraints"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <ImageView
-        android:id="@+id/imgBirutua"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@drawable/birtu"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="422dp"
-        tools:ignore="MissingConstraints"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Hitam"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/imgred"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@drawable/red"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="287dp"
-        tools:ignore="MissingConstraints"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Putih"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="90dp"
+                android:layout_marginBottom="10dp"/>
 
-    <ImageView
-        android:id="@+id/imgUngu"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@drawable/ungu"
-        tools:layout_editor_absoluteX="294dp"
-        tools:layout_editor_absoluteY="287dp"
-        tools:ignore="MissingConstraints"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abu-abu"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="85dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imghijau"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@drawable/jotut"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="549dp"
-        tools:ignore="MissingConstraints"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <ImageView
-        android:id="@+id/imgWhite"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@drawable/white"
-        tools:layout_editor_absoluteX="294dp"
-        tools:layout_editor_absoluteY="549dp"
-        tools:ignore="MissingConstraints"/>
+            <ImageView
+                android:id="@+id/imgGreen"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/green"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="10dp"/>
 
-    <ImageView
-        android:id="@+id/imgGrey"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@drawable/grey"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="162dp"
-        tools:ignore="MissingConstraints"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageView
+                android:id="@+id/imgCokelat"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/cokelat"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/imgBlue"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Hijau Muda"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Coklat"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biru Muda"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="75dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgBirutua"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/birtu"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/imgred"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/red"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/imgUngu"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ungu"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Biru Tua"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Merah"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ungu"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="90dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imghijau"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/jotut"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/imgWhite"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/kuning"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/imgGrey"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/orange"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Hijau Tua"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kuning"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oranye"
+                android:textColor="#FF9800"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="75dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
