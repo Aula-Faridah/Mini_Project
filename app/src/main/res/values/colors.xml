@@ -20,6 +20,8 @@
     <color name="blue_500">#2196f3</color>
     <color name="cyan_500">#00bcd4</color>
     <color name="light_blue_500">#03a9f4</color>
+    <color name="dark_grey">#2c2c2c</color>
+    <color name="light_grey">#6a6a6a</color>
 
     <array name="menu_color">
         <item>@color/an4</item>

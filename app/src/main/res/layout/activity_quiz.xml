@@ -1,18 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".QuizActivity">
+    tools:context=".QuizActivity"
+    android:background="@color/light_grey">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearSoal">
+
+        <ImageButton
+            android:id="@+id/imageBack"
+            android:transitionName="fade_trans"
+            android:src="@drawable/kembali"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/tvNoUrut"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginStart="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="76dp"
-        android:src="@drawable/closebutton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:id="@+id/imageViewSoal"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/linearSoal"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewSoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewSoal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewSoal"
+        android:layout_marginTop="5dp" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayoutjwb"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_below="@+id/textViewSoal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/dark_grey"
+            app:cardCornerRadius="8dp">
+
+            <RadioButton
+                android:id="@+id/rbjawaban1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:textSize="20sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/dark_grey"
+            app:cardCornerRadius="8dp">
+            <RadioButton
+                android:id="@+id/rbjawaban2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayoutjwb2"
+        android:gravity="center"
+        android:layout_below="@+id/linearLayoutjwb">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/dark_grey"
+            app:cardCornerRadius="8dp">
+
+            <RadioButton
+                android:id="@+id/rbjawaban3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:textSize="20sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/dark_grey"
+            app:cardCornerRadius="8dp">
+            <RadioButton
+                android:id="@+id/rbjawaban4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/radioGroup1">
+        <ImageButton
+            android:id="@+id/imageCheck"
+            android:transitionName="fade_trans"
+            android:src="@drawable/check"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="200dp"/>
+        <ImageButton
+            android:id="@+id/imageNext"
+            android:transitionName="fade_trans"
+            android:src="@drawable/next"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="95dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
