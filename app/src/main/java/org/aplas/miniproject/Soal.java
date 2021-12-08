@@ -6,7 +6,7 @@ public class Soal {
     private String pil_b;
     private String pil_c;
     private String pil_d;
-    private int jawaban;
+    private int jwban;
     private int gambar;
     public Soal() {
         super();
@@ -51,11 +51,11 @@ public class Soal {
     }
 
     public int getJwban() {
-        return jawaban;
+        return jwban;
     }
 
     public void setJwban(int jwban) {
-        this.jawaban = jwban;
+        this.jwban = jwban;
     }
 
     public int getGambar() {

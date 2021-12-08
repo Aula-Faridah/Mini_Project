@@ -7,7 +7,6 @@ import android.media.Image;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -18,20 +17,24 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.view.View.OnClickListener;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import android.util.Log;
 import java.util.Collections;
 import java.util.List;
 
 public class QuizActivity extends AppCompatActivity {
     SqliteHelper DB;
     private ImageView img;
-    private TextView txtno, txtsoal;
+    private TextView txtno, txtsoal, txtwaktu;
     private RadioGroup rg;
     private RadioButton jawaban1, jawaban2, jawaban3, jawaban4;
     private List<Soal> listSoal;
-    private ImageButton btnPrev, btnNext, btnSelesai;
+    private CountDownTimer mCountDownTimer;
+    private int detik = 300 * 1000; // --> 5 menit
+    private ImageButton btnPrev, btnNext, btnSelesai, btnBack;
     int jawabanYgDiPilih[] = null;
     int jawabanYgBenar[] = null;
     boolean cekPertanyaan = false;
@@ -44,6 +47,7 @@ public class QuizActivity extends AppCompatActivity {
 
         DB = new SqliteHelper(this);
         txtno = (TextView) findViewById(R.id.tvNoUrut);
+        txtwaktu = (TextView) findViewById(R.id.textViewWaktu);
         txtsoal = (TextView) findViewById(R.id.textViewSoal);
         rg = (RadioGroup) findViewById(R.id.radioGroup1);
         jawaban1 = (RadioButton) findViewById(R.id.rbjawaban1);
@@ -51,87 +55,35 @@ public class QuizActivity extends AppCompatActivity {
         jawaban3 = (RadioButton) findViewById(R.id.rbjawaban3);
         jawaban4 = (RadioButton) findViewById(R.id.rbjawaban4);
         img = (ImageView) findViewById(R.id.imageViewSoal);
-        btnPrev = (ImageButton) findViewById(R.id.imageBack);
+        btnPrev = (ImageButton) findViewById(R.id.imageBc);
         btnNext = (ImageButton) findViewById(R.id.imageNext);
         btnSelesai = (ImageButton) findViewById(R.id.imageCheck);
+        btnBack = (ImageButton) findViewById(R.id.imageBack);
         listSoal = new ArrayList<Soal>();
         listSoal = DB.getSoal();
-        Collections.shuffle(listSoal);
+        btnSelesai.setOnClickListener(klikSelesai);
+        btnPrev.setOnClickListener(klikSebelum);
+        btnNext.setOnClickListener(klikBerikut);
+        //Collections.shuffle(listSoal);
         jawabanYgDiPilih = new int[listSoal.size()];
         java.util.Arrays.fill(jawabanYgDiPilih, -1);
         jawabanYgBenar = new int[listSoal.size()];
         java.util.Arrays.fill(jawabanYgBenar, -1);
         mulaiKuis();
 
-        btnSelesai.setOnClickListener(new View.OnClickListener() {
+        btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                aturJawaban_nya();
-                // hitung berapa yg benar
-                int jumlahJawabanYgBenar = 0;
-                for (int i = 0; i < jawabanYgBenar.length; i++) {
-                    if ((jawabanYgBenar[i] != -1) && (jawabanYgBenar[i] == jawabanYgDiPilih[i]))
-                        jumlahJawabanYgBenar++;
-                }
-                AlertDialog tampilKotakAlert;
-                tampilKotakAlert = new AlertDialog.Builder(QuizActivity.this).create();
-                tampilKotakAlert.setTitle("Nilai");
-                tampilKotakAlert.setMessage("Benar " +jumlahJawabanYgBenar + " dari "
-                        + (listSoal.size() +" soal"));
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
 
-                tampilKotakAlert.setButton(AlertDialog.BUTTON_NEUTRAL, "Lagi",
-                        new DialogInterface.OnClickListener() {
-
-                            public void onClick(DialogInterface dialog, int which) {
-                                cekPertanyaan = false;
-                                urutanPertanyaan = 0;
-
-                                QuizActivity.this.tunjukanPertanyaan(0,
-                                        cekPertanyaan);
-                            }
-                        });
-
-                tampilKotakAlert.setButton(AlertDialog.BUTTON_NEGATIVE, "Keluar",
-                        new DialogInterface.OnClickListener() {
-
-                            public void onClick(DialogInterface dialog, int which) {
-                                cekPertanyaan = false;
-                                finish();
-                            }
-                        });
-
-                tampilKotakAlert.show();
-
-            }
-
-        });
-        btnPrev.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                aturJawaban_nya();
-                urutanPertanyaan--;
-                if (urutanPertanyaan < 0)
-                    urutanPertanyaan = 0;
-
-                tunjukanPertanyaan(urutanPertanyaan, cekPertanyaan);
-            }
-
-        });
-        btnNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                aturJawaban_nya();
-                urutanPertanyaan++;
-                if (urutanPertanyaan >= listSoal.size())
-                    urutanPertanyaan = listSoal.size() - 1;
-
-                tunjukanPertanyaan(urutanPertanyaan, cekPertanyaan);
             }
 
         });
 
     }
     protected void mulaiKuis() {
+        setUpWaktu();
         setUpSoal();
 
     }
@@ -195,6 +147,71 @@ public class QuizActivity extends AppCompatActivity {
             Log.e(this.getClass().toString(), e.getMessage(), e.getCause());
         }
     }
+    private void setUpWaktu() {
+        mCountDownTimer = new CountDownTimer(detik, 1000)
+        {
+
+            @Override
+            public void onTick(long millisUntilFinished)
+            {
+                // TODO Auto-generated method stub
+                txtwaktu.setText("Sisa waktu: " +(int) (millisUntilFinished / 60000) +
+                        " menit");
+            }
+
+            @Override
+            public void onFinish()
+            {
+                // TODO Auto-generated method stub
+                txtwaktu.setText("Sisa: 0 menit");
+                Toast.makeText(QuizActivity.this, "Waktu Habis",
+                        Toast.LENGTH_SHORT).show();
+            }
+        };
+
+        mCountDownTimer.start();
+    }
+
+    private OnClickListener klikSelesai = new OnClickListener() {
+        public void onClick(View v) {
+            aturJawaban_nya();
+            // hitung berapa yg benar
+            int jumlahJawabanYgBenar = 0;
+            for (int i = 0; i < jawabanYgBenar.length; i++) {
+                if ((jawabanYgBenar[i] != -1) && (jawabanYgBenar[i] == jawabanYgDiPilih[i]))
+                    jumlahJawabanYgBenar++;
+            }
+            AlertDialog tampilKotakAlert;
+            tampilKotakAlert = new AlertDialog.Builder(QuizActivity.this).create();
+            tampilKotakAlert.setTitle("Nilai");
+            tampilKotakAlert.setMessage("Benar " +jumlahJawabanYgBenar + " dari "
+                    + (listSoal.size() +" soal"));
+
+            tampilKotakAlert.setButton(AlertDialog.BUTTON_NEUTRAL, "Lagi",
+                    new DialogInterface.OnClickListener() {
+
+                        public void onClick(DialogInterface dialog, int which) {
+                            cekPertanyaan = false;
+                            urutanPertanyaan = 0;
+
+                            QuizActivity.this.tunjukanPertanyaan(0,
+                                    cekPertanyaan);
+                        }
+                    });
+
+            tampilKotakAlert.setButton(AlertDialog.BUTTON_NEGATIVE, "Keluar",
+                    new DialogInterface.OnClickListener() {
+
+                        public void onClick(DialogInterface dialog, int which) {
+                            cekPertanyaan = false;
+                            finish();
+                        }
+                    });
+
+            tampilKotakAlert.show();
+
+        }
+    };
     private void aturJawaban_nya() {
         if (jawaban1.isChecked())
             jawabanYgDiPilih[urutanPertanyaan] = 0;
@@ -209,8 +226,27 @@ public class QuizActivity extends AppCompatActivity {
         Log.d("", Arrays.toString(jawabanYgBenar));
 
     }
+    private OnClickListener klikBerikut = new OnClickListener() {
+        public void onClick(View v) {
+            aturJawaban_nya();
+            urutanPertanyaan++;
+            if (urutanPertanyaan >= listSoal.size())
+                urutanPertanyaan = listSoal.size() - 1;
+
+            tunjukanPertanyaan(urutanPertanyaan, cekPertanyaan);
+        }
+    };
+    private OnClickListener klikSebelum = new OnClickListener() {
+        public void onClick(View v) {
+            aturJawaban_nya();
+            urutanPertanyaan--;
+            if (urutanPertanyaan < 0)
+                urutanPertanyaan = 0;
+
+            tunjukanPertanyaan(urutanPertanyaan, cekPertanyaan);
+        }
+    };
     private void pasangLabelDanNomorUrut() {
-        txtno.setText("Soal ke-" + (urutanPertanyaan + 1) + " dari "
-                + listSoal.size());
+        txtno.setText("Soal ke-" + (urutanPertanyaan + 1) + " dari " + listSoal.size());
     }
 }

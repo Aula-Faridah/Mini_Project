@@ -21,16 +21,19 @@
         <entry key="..\:/Users/Dell/AndroidStudioProjects/Mini_Project/app/src/main/res/layout/activity_animal.xml" value="0.22" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/Mini_Project/app/src/main/res/layout/activity_fruit.xml" value="0.13722826086956522" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/Mini_Project/app/src/main/res/layout/activity_huruf.xml" value="0.22" />
-        <entry key="..\:/Users/Dell/AndroidStudioProjects/Mini_Project/app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="..\:/Users/Dell/AndroidStudioProjects/Mini_Project/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/Mini_Project/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/Mini_Project/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/Mini_Project/app/src/main/res/layout/activity_menu.xml" value="0.25" />
-        <entry key="..\:/Users/Dell/AndroidStudioProjects/Mini_Project/app/src/main/res/layout/activity_quiz.xml" value="0.1" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/Mini_Project/app/src/main/res/layout/activity_quiz.xml" value="0.25" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/Mini_Project/app/src/main/res/layout/activity_register.xml" value="0.25885416666666666" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/Mini_Project/app/src/main/res/layout/activity_sub_animal.xml" value="0.12864583333333332" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/Mini_Project/app/src/main/res/layout/activity_sub_fruit.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/Mini_Project/app/src/main/res/layout/activity_warna.xml" value="0.21" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/Mini_Project/app/src/main/res/layout/item_row_hero.xml" value="0.23324275362318841" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/Mini_Project/app/src/main/res/layout/layout_data.xml" value="0.33" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/Mini_Project/app/src/main/res/layout/layout_logout.xml" value="0.1" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/Mini_Project/app/src/main/res/menu/layout_logout.xml" value="0.1" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/Mini_Project/app/src/main/res/menu/main_menu.xml" value="0.1" />
       </map>
     </option>
   </component>
