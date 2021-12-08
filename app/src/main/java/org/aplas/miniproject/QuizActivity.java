@@ -176,8 +176,8 @@ public class QuizActivity extends AppCompatActivity {
         public void onClick(View v) {
             aturJawaban_nya();
             // hitung berapa yg benar
-            int jumlahJawabanYgBenar = 0;
-            for (int i = 0; i < jawabanYgBenar.length; i++) {
+            int jumlahJawabanYgBenar = 1;
+            for (int i = 1; i < jawabanYgBenar.length; i++) {
                 if ((jawabanYgBenar[i] != -1) && (jawabanYgBenar[i] == jawabanYgDiPilih[i]))
                     jumlahJawabanYgBenar++;
             }
@@ -194,6 +194,7 @@ public class QuizActivity extends AppCompatActivity {
                             cekPertanyaan = false;
                             urutanPertanyaan = 0;
 
+                            java.util.Arrays.fill(jawabanYgDiPilih, -1);
                             QuizActivity.this.tunjukanPertanyaan(0,
                                     cekPertanyaan);
                         }
