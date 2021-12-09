@@ -319,4 +319,22 @@
             tools:layout_editor_absoluteY="589dp" />
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/linearLayoutHuruf8">
+
+        <ImageButton
+            android:id="@+id/buttonPrev"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/prev"
+            android:background="@null"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
 </RelativeLayout>
