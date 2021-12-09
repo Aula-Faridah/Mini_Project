@@ -25,17 +25,7 @@ public class SqliteHelper extends SQLiteOpenHelper{
     public static final String COLUMN_EMAIL = "email";
     public static final String COLUMN_USERNAME = "username";
     public static final String COLUMN_PASSWORD = "password";
-    //Nama Tabel
-//    public static final String TABLE_NAME2 = "tb_soal";
-    //Nama Kolom
-//    public static final String COLUMN_IDSOAL = "id_soal";
-//    public static final String COLUMN_SOAL  = "soal";
-//    public static final String COLUMN_PIL_A = "pil_a";
-//    public static final String COLUMN_PIL_B = "pil_b";
-//    public static final String COLUMN_PIL_C = "pil_c";
-//    public static final String COLUMN_PIL_D = "pil_d";
-//    public static final String COLUMN_JAWABAN = "jawaban";
-//    public static final String COLUMN_IMG = "img";
+
 
     public SqliteHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -293,7 +283,7 @@ public class SqliteHelper extends SQLiteOpenHelper{
         values.put("img", R.drawable.red);
         db.insert("tbl_soal", "soal", values);
 
-        values.put("soal", "Huruf apakah ini?");
+        values.put("soal", "Hewan apakah ini?");
         values.put("pil_a", "Anjing");
         values.put("pil_b","Kuda");
         values.put("pil_c", "Bebek");
@@ -302,7 +292,7 @@ public class SqliteHelper extends SQLiteOpenHelper{
         values.put("img", R.drawable.anjing);
         db.insert("tbl_soal", "soal", values);
 
-        values.put("soal", "Huruf apakah ini?");
+        values.put("soal", "Hewan apakah ini?");
         values.put("pil_a", "Gajah");
         values.put("pil_b","Lebah");
         values.put("pil_c", "Lumba-Lumba");
@@ -311,7 +301,7 @@ public class SqliteHelper extends SQLiteOpenHelper{
         values.put("img", R.drawable.bebek);
         db.insert("tbl_soal", "soal", values);
 
-        values.put("soal", "Huruf apakah ini?");
+        values.put("soal", "Hewan apakah ini?");
         values.put("pil_a", "Singa");
         values.put("pil_b","Sapi");
         values.put("pil_c", "Kucing");
@@ -320,7 +310,7 @@ public class SqliteHelper extends SQLiteOpenHelper{
         values.put("img", R.drawable.singa);
         db.insert("tbl_soal", "soal", values);
 
-        values.put("soal", "Huruf apakah ini?");
+        values.put("soal", "Hewan apakah ini?");
         values.put("pil_a", "Burung Hantu");
         values.put("pil_b","Singa");
         values.put("pil_c", "Katak");
@@ -329,7 +319,7 @@ public class SqliteHelper extends SQLiteOpenHelper{
         values.put("img", R.drawable.katak);
         db.insert("tbl_soal", "soal", values);
 
-        values.put("soal", "Huruf apakah ini?");
+        values.put("soal", "Hewan apakah ini?");
         values.put("pil_a", "Bebek");
         values.put("pil_b","Kucing");
         values.put("pil_c", "Gajah");
